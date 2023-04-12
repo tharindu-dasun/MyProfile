@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Transition</title>
+<!--    <link rel="preconnect" href="https://fonts.googleapis.com">-->
+<!--    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>-->
+<!--    <link href="https://fonts.googleapis.com/css2?family=Alkatra&display=swap" rel="stylesheet">-->
+    <link rel="stylesheet" href="assest/fonts/css/all.min.css">
+
+    <style>
+        section{
+            width: 200px;
+            height: 450px;
+            top: 60px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            right: 150px;
+        }
+
+       section>div{
+            height: 40px;
+            left: 0px;
+            position: relative;
+            background : mediumpurple;
+            color: white;
+            box-shadow: 1px 2px 5px 2px black;
+            transition: all 2s;
+        }
+        section>div>h3{
+            margin: 0;
+            display: inline-block;
+            padding: 10px;
+        }
+
+        section>div>i{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            font-size: 25px;
+        }
+
+        section>div:hover{
+            background-color: #c21e1e;
+            left: 200px;
+            cursor: pointer;
+            transition: all 2s;
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div>
+        <h3>Menu One</h3>
+        <i class="fa-solid fa-address-book"></i>
+    </div>
+    <div>
+        <h3>Menu Two</h3>
+        <i class="fa-solid fa-truck-fast"></i>
+    </div>
+    <div>
+        <h3>Menu Three</h3>
+        <i class="fa-solid fa-globe"></i>
+    </div>
+    <div>
+        <h3>Menu Four</h3>
+        <i class="fa-solid fa-layer-group"></i>
+    </div>
+    <div>
+        <h3>Menu Five</h3>
+        <i class="fa-solid fa-cart-shopping"></i>
+    </div>
+</section>
+
+</body>
+</html>

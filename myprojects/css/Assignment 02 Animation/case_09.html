@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Key Fream Basic</title>
+    <style>
+        section{
+            height: 100px;
+            width: 250px;
+            background-color: red;
+            border-radius: 30px;
+            background-size: cover;
+            animation-name: changeColours;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            position: relative;
+        }
+        
+        @keyframes changeColours {
+            from{
+                background-color: blue;
+                left: 0;
+                top: 0;
+            }
+            25%{
+                background-color: green;
+                left: 1000px;
+                top: 0;
+                transform: rotate(80deg);
+            }
+            50%{
+                background-color: orangered;
+                left: 1000px;
+                top: 480px;
+                transform: rotate(160deg);
+            }
+            75%{
+                background-color: gold;
+                left: 0;
+                top: 480px;
+                transform: rotate(240deg);
+            }
+            to{
+                background-color: deeppink;
+                left: 0;
+                top: 0;
+                transform: rotate(320deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+
+</section>
+
+</body>
+</html>
