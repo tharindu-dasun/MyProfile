@@ -1,269 +1,838 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html" xmlns:align="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8">
-    <title>Assignment</title>
+    <title>My_Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta content="Tharindu Dasun" name="owner">
+    <meta content="Portifolio, Developer, Software Engineer, Website, Software, HTML,Java,Css,JavaScript,Hire,Full Stack Developer"
+          name="keywords">
+    <meta content="Portifolio FullStack Developer" name="author">
+    <meta content="white" name="theme-color">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <meta content="width=device-width initial-scale=1  user-scalable=no" name="viewport">
+    <style>
+        body {
+            background-image: url("../MyProfile/assest/images/Back_Ground.png");
+            /*background-position: center;*/
+            height: 100%;
+            /*background-position: center;*/
+            background-repeat: no-repeat;
+            /*background-size: cover;*/
+            /*background-repeat: repeat-y;*/
+            font-family: 'Poppins';
+            font-size: 20px;
+        }
+
+
+
+
+        /*---------------------------------------------Header------------------------------------*/
+        #header
+        header{
+            border: 1px solid #000049;
+            position: relative;
+            box-shadow: 0px 3px 5px 0px black;
+            background-color: darkblue;
+        }
+
+        header>ul>li{
+            display: inline;
+            padding: 0 60px 0 60px;
+            font-size: 20px;
+            font-weight: bold;
+            color: white;
+        }
+
+        header>ul>li:hover{
+            cursor: pointer;
+            color: blue;
+        }
+
+        /*#navbar {*/
+
+        /*    overflow: hidden;*/
+        /*    background-color: black;*/
+        /*    padding: 90px 10px;*/
+        /*    transition: 0.4s;*/
+        /*    position: fixed;*/
+        /*    width: 100%;*/
+        /*    top: 0;*/
+        /*    z-index: 99;*/
+        /*}*/
+
+        /*#navbar a {*/
+        /*    float: left;*/
+        /*    color: black;*/
+        /*    text-align: center;*/
+        /*    padding: 6px;*/
+        /*    text-decoration: none;*/
+        /*    font-size: 20px;*/
+        /*    line-height: 25px;*/
+        /*    border-radius: 2px;*/
+        /*}*/
+
+        /*#navbar #logo {*/
+        /*    font-size: 35px;*/
+        /*    font-weight: bold;*/
+        /*    transition: 0.4s;*/
+        /*}*/
+        /*#navbar span {*/
+        /*    color: #fa118e;*/
+        /*}*/
+        /*#navbar a:hover {*/
+        /*    background-color: #ddd;*/
+        /*    color: black;*/
+        /*}*/
+
+        /*#navbar a.active {*/
+        /*    background-color: #000000;*/
+        /*    color: deeppink;*/
+        /*}*/
+
+        /*#navbar-right {*/
+        /*    float: right;*/
+        /*    color: #000000;*/
+        /*}*/
+
+        /*@media screen and (max-width: 580px) {*/
+        /*    #navbar {*/
+        /*        padding: 20px 10px !important;*/
+        /*    }*/
+        /*    #navbar a {*/
+        /*        float: none;*/
+        /*        display: block;*/
+        /*        text-align: left;*/
+        /*    }*/
+        /*    #navbar-right {*/
+        /*        float: none;*/
+        /*    }*/
+        /*}*/
+
+
+        /*-----------------------------------------------About-----------------------------------------*/
+
+        #home-set {
+            text-decoration: none;
+            overflow: hidden;
+            /*background-color: white;*/
+            padding: 90px 10px;
+            transition: 0.4s;
+            /*width: 100%*/
+            width: available;
+            top: 0;
+            z-index: 99;
+            padding-top: 50px;
+            margin-top: -130px;
+        }
+
+
+        #social{
+            margin-left: 14vw;
+        }
+
+        .Home-Text-Container > img {
+
+            height: auto;
+            float: right;
+            width: 500px;
+        }
+
+        .Home-Text-Container >h4{
+            margin-left: 100px;
+            height: auto;
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .Home-Text-Container >h3{
+            margin-left: 40px;
+            height: auto;
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+
+        /*.social >h4{*/
+
+        /*    height: auto;*/
+        /*    text-decoration: none;*/
+        /*    color: gray;*/
+
+        /*}*/
+
+
+        .Home-Text-Container >h2{
+            height: auto;
+            font-weight: 8600;
+            color: #07073d;
+            font-size: 60px;
+        }
+
+            /*span {*/
+            /*    color: #000000;*/
+            /*}*/
+        .Home-Text-Container> button{
+
+            bottom: 5%;
+            width: 120px;
+            height: 40px;
+            color: #000000;
+            outline: none;
+            border: none;
+            background-color: #e3e3e3;
+            border-radius: 5px;
+            margin-left: 23vw;
+
+        }
+
+
+        /*-----------------------------------------------About Me-------------------------------------*/
+
+        #about-me > img {
+            height: auto;
+            float: left;}
+        > h5 {
+            color: gray;
+        }
+        #about-me>h1 {
+            height: auto;
+            margin:40px;
+            color: #07073d;
+            font-weight: bold;
+            font-size: 45px;
+            bold:80%;
+
+        }
+        /*span {*/
+        /*    color: #fa118e;*/
+        /*}*/
+
+        @media screen and (max-width: 580px) {
+            #home-set {
+                padding: 20px 10px !important;
+            }
+
+        }
+
+
+
+        /*------------------------------------------Services---------------------------------------------*/
+
+
+        #services
+
+
+        #services>h1 {
+
+            margin: 40px;
+            color: #07073d;
+            font-weight: bold;
+            font-size: 45px;
+
+        }
+
+        #ser-img >   img {
+            /*width: 440px;*/
+            width: 400px;
+            text-decoration: none;
+            padding-left: 32px;
+            height: auto;
+        }
+
+        span {
+            color: #ffffff;
+        }
+        @media screen and (max-width: 580px) {
+            #home-set {
+                padding: 20px 10px !important;
+            }
+
+        }
+
+        /*------------------------------------------------Skills-----------------------------------------*/
+
+        #skills> h1 {
+            /*margin:40px;*/
+            color: #07073d;
+            font-weight: bold;
+            font-size: 45px;
+            margin-right: 180px;
+        }
+
+        #skills{
+            margin-left: 130px;
+        }
+        span {
+            color: #ffffff;
+        }
+        #skills> div {
+            /*height: 95px;*/
+            width: 280px;
+            margin: auto;
+            /*border: 2px solid #dbc3e7;*/
+            float:left;
+            padding: 10px 0px;
+        }
+
+        #skills> img {
+            background-color: #ffffff;
+        }
+
+        #skills>div> h5 {
+            margin: auto;
+            height: 10px;
+            width: 120px;
+            float: right;
+            color: #07073d;
+            font-weight: bold;
+            font-size: 15px;
+        }
+
+        /*button{*/
+        /*    bottom: 5%;*/
+        /*    width: 70px;*/
+        /*    height: 30px;*/
+        /*    color: #ffffff;*/
+        /*    outline: none;*/
+        /*    border: none;*/
+        /*    background-color: #ffffff;*/
+        /*    border-radius: 5px;*/
+        /*}*/
+
+        @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+            [class*="col-"] {
+                width: 100%;
+            }
+        }
+
+        /*---------------------------------------------Projects-------------------------------------*/
+
+
+        #projects
+
+        img {
+            width: 440px;
+            cursor: pointer;
+            color: blue;
+
+        /*header>ul>li:hover{*/
+        /*    cursor: pointer;*/
+        /*    color: blue;*/
+        /*}*/
+
+        }
+
+        #projects > h1 {
+
+            color: #07073d;
+            font-weight: bold;
+            font-size: 45px;
+            margin-right: 139px;
+            /*margin-right: 10vw;*/
+
+
+        }
+
+        span {
+            color: #ffffff;
+        }
+        .projects > button {
+            bottom: 5%;
+            width: 100px;
+            height: 40px;
+            color: #000000;
+            outline: none;
+            border: none;
+            background-color: #ffffff;
+            border-radius: 5px;
+            margin-left: 45vw;
+        }
+
+        @media screen and (max-width: 580px) {
+            #home-set {
+                padding: 20px 10px !important;
+            }
+
+        }
+
+        /*--------------------------------------------Assignment--------------------------------------*/
+
+        #Assignment
+
+        img {
+            width: 300px;
+            padding: 20px 10px !important;
+            cursor: pointer;
+            /*color: blue;*/
+        }
+
+        #Assignment > h1 {
+            margin: 40px;
+            color: #07073d;
+            font-weight: bold;
+            font-size: 45px;
+
+        }
+
+        span {
+            color: #ffffff;
+        }
+        .projects > button {
+            bottom: 5%;
+            width: 100px;
+            height: 40px;
+            color: #000000;
+            outline: none;
+            border: none;
+            background-color: #ffffff;
+            border-radius: 5px;
+
+        }
+
+        @media screen and (max-width: 580px) {
+            #home-set {
+                padding: 20px 10px !important;
+            }
+
+            /*}*/
+            /*--------------------------------------------------Education-------------------------------------*/
+            #education > h1 {
+                margin: 40px;
+                color: #07073d;
+                font-weight: bold;
+                font-size: 45px;
+            }
+
+            .edu-text-content > td > img{
+                margin-top: 100px;
+            }
+
+            h4 {
+                margin: 40px;
+                color: #ffffff;
+            }
+
+
+            /*.edu-line.  span {*/
+            /*    color: #fa118e;*/
+            /*}*/
+            p {
+                margin: 40px;
+                color: gray;
+            }
+
+            /*--------------------------------------------------Contact----------------------------------------------*/
+            #contact {
+                margin: 00px;
+                font-weight: bold;
+                font-size: 14px;
+                opacity: 1;
+                visibility: visible;
+                transition: all 0.3s ease-in-out;
+            }
+
+
+            h1 {
+                margin: 40px;
+                color: #07073d;
+                font-weight: bold;
+                font-size: 45px;
+            }
+
+            span {
+                color: #ffffff;
+            }
+
+            input {
+
+                width: 400px;
+                height: 50px;
+                color: #ffffff;
+                outline: none;
+                border: none;
+                background-color: #f580bf;
+                justify-content: center;
+
+            }
+
+            textarea {
+                width: 400px;
+                height: 150px;
+                color: #ffffff;
+                outline: none;
+                border: none;
+                background-color: #f580bf;
+                justify-content: center;
+
+            }
+
+            .contact > button {
+                bottom: 5%;
+                width: 120px;
+                height: 40px;
+                color: #ffffff;
+                outline: none;
+                border: none;
+                background-color: #000000;
+                border-radius: 5px;
+            }
+
+            @media only screen and (max-width: 768px) {
+                [class*="col-"] {
+                    width: 100%;
+                }
+            }
+
+
+            /*---------------------------------------------------Footer--------------------------------------------------*/
+            #footer
+            #navbar #logo {
+                font-size: 35px;
+                font-weight: bold;
+                transition: 0.4s;
+            }
+
+            #sa {
+                float: left;
+            }
+
+            a {
+                float: right;
+            }
+
+            @media screen and (max-width: 580px) {
+                #home-set {
+                    padding: 20px 10px !important;
+                }
+            }
+        }
+    </style>
 </head>
-<body>
-<table border="1">
-    <table>
-        <thead>
-        <th width="12%"></th>
-        <th><input type="button" value="About"></th>
-        <th width="10%"></th>
-        <th><input type="button" value="Service"></th>
-        <th width="10%"></th>
-        <th><input type="button" value="Education"></th>
-        <th width="9%"></th>
-        <th><input type="button" value="Skills"></th>
-        <th width="10%"></th>
-        <th><input type="button" value="Projects"></th>
-        <th width="10%"></th>
-        <th><input type="button" value="Contact Us"></th>
-        <th width="12%"></th>
-        </thead>
 
-        <table>
-            <th>
-                <h1>Hello !</h1>
-            </th>
-        </table>
-        <table>
-            <thead>
-            <th>
-                <h1>I'm Tharindu Dasun</h1>
-                <h3>Professional Full-stack Developer</h3>
-            </th>
-            </thead>
-        </table>
+<main>
+    <header>
+        <ul>
+            <li><i class="fa-solid fa-house"></i>About</li>
+            <li><i class="fa-solid fa-bell-concierge"></i>Service</li>
+            <li><i class="fa-solid fa-phone-volume"></i>Education</li>
+            <li><i class="fa-solid fa-address-card"></i>Skills</li>
+            <li><i class="fa-solid fa-address-card"></i>Projects</li>
+            <li><i class="fa-solid fa-address-card"></i>Contact Us</li>
+        </ul>
 
-        <table>
-            <thead>
-            <tr>
-                <td>
-                    <h3>
-                        I’m Developer and Designer.
-                        I'm very passionate and dedicated to my work.
-                        I have acquired the skills and knowledge necessary to make your project a success.
-                        Let's collaborate!
-                        I'm open for collaborations.
-                        I can made for you great softwares,web designs, portfolios and much others at good price.
-                    </h3>
-                </td>
+    </header>
+    <br>
 
-                <td>
-                <th>
-                    <img src="assest/images/profile%20pic.png" width="450" alt="lap">
-                </th>
-                </td>
-            </tr>
-            </thead>
-        </table>
-        <th>
+<!--    --------------------------------------------------About me--------------------------------------------------------->
+
+    <div id="home-set">
+
+        <section class="Home-Text-Container">
+            <br>
+            <img alt="logo"  src="../../MyProfile/assest/images/My_logo.png">
+            <h2 class="hello">Hello! <br> I’m <span> <b>Tharindu Dasun . </b></span> </h2>
+
+            <h3>Professional Full-stack Developer</h3>
+
+            <h4>I’m Developer and Designer. I'm very passionate and <br>
+                dedicated to my work. I have acquired the skills and <br>
+                knowledge necessary to make your project a success. <br>
+                Let's collaborate! <br>
+                I'm open for collaborations. I can made for you great <br>
+                softwares,web designs, portfolios and much others at <br> good price.
+            </h4>
+
+            <button>Hire Me</button>
+
+            <br>
+            <br>
+
+
+
+            <h4 id="social">
+                <a href="https://www.linkedin.com/in/tharindu-dasun-medis/" target="_blank">
+                    <img src="../../MyProfile/assest/images/Linkiden_logo.png" width="70" alt="lap"></a>
+
+                <a href="https://twitter.com/tharindu_dasun_" target="_blank">
+                    <img src="../../MyProfile/assest/images/Twitter_logo.png" width="70" alt="lap"></a>
+
+                <a href="https://www.facebook.com/tharindu.dasun.359" target="_blank">
+                    <img src="../../MyProfile/assest/images/FB_logo.png" width="70" alt="lap"></a>
+
+                <a href="https://www.instagram.com/tharindu_dasun514/" target="_blank">
+                    <img src="../../MyProfile/assest/images/Insta_logo.png" width="70" alt="lap"></a>
+
+                <a href="https://github.com/tharindu-dasun" target="_blank">
+                    <img src="../../MyProfile/assest/images/Github_logo.png" width="70" alt="lap"></a>
+            </h4>
+
+            <!--            <div>-->
+            <!--                <a href="https://www.linkedin.com/in/tharindu-dasun-medis/" target="_blank">-->
+            <!--                    <img src="../../MyProfile/assest/images/Linkiden_logo.png" width="50" alt="lap">-->
+            <!--                </a>-->
+            <!--                <a href="https://twitter.com/tharindu_dasun_" target="_blank">-->
+            <!--                    <img src="../../MyProfile/assest/images/Twitter_logo.png" width="50" alt="lap">-->
+            <!--                </a>-->
+            <!--                <a href="https://www.facebook.com/tharindu.dasun.359" target="_blank">-->
+            <!--                    <img src="../../MyProfile/assest/images/FB_logo.png" width="50" alt="lap">-->
+            <!--                </a>-->
+            <!--                <a href="https://www.instagram.com/tharindu_dasun514/" target="_blank">-->
+            <!--                    <img src="../../MyProfile/assest/images/Insta_logo.png" width="50" alt="lap">-->
+            <!--                </a>-->
+            <!--                <a href="https://github.com/tharindu-dasun" target="_blank">-->
+            <!--                    <img src="../../MyProfile/assest/images/Github_logo.png" width="50" alt="lap">-->
+            <!--                </a>-->
+            <!--            </div>-->
+
+
+        </section>
+    </div>
+
+    <!--------------------------------------------Services------------------------------------------------------->
+
+    <section id="services">
+        <h1 align="center">SERVICES<span>.</span></h1>
+
+        <div id="ser-img">
+            <img src="../../MyProfile/assest/images/Software Deve.png" width="70" height="50">
+            <img src="../../MyProfile/assest/images/UI UX Des.png">
+            <img src="../../MyProfile/assest/images/Web Dev.png">
+        </div>
+
+    </section>
+
+    <!--    ---------------------------------------------Education---------------------------------------------->
+
+    <section id="education">
+        <h1 align="center">EDUCATION<span>.</span></h1>
+
+        <div class="edu-line">
+
+            <ul>
+                <li>
+                    <div class="edu-text-content">
+
+                        <td><img src="../../MyProfile/assest/images/IJSE_logo.png" width="100" alt="lap"></td>
+                        <td>2022 - 2024 GDSE Program
+                            IJSE - Institute of Software Engineering</td> <br><br>
+
+
+                        <td><img src="../MyProfile/assest/images/UOC_logo.png" width="100" alt="lap"></td>
+                        <td>2020 - 2021 Certificate in Business English
+                            University of Colombo</td> <br><br>
+
+
+                        <td><img src="../../MyProfile/assest/images/PCC_logo.png" width="100" alt="lap"></td>
+                        <td>2019 A/L Exam Physical Science Stream
+                            Central College Piliyandala </td> <br><br>
+
+
+                        <td><img src="../../MyProfile/assest/images/PCC_logo.png" width="100" alt="lap"></td>
+                        <td>2016 O/L Exam
+                            Central College Piliyandala </td> <br><br>
+
+
+                        <td><img src="../../MyProfile/assest/images/SCV_logo.png" width="100" alt="lap"></td>
+                        <td>2006 - 2010  Primary Studies
+                            Somaveera Chandrasiri Vidyalaya - Piliyandala</td> <br>
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+
+<!--    --------------------------------------------SKILLS----------------------------------------------->
+
+    <section id="skills">
+        <h1 align="center">SKILLS<span>.</span></h1>
+
+        <div class="java">
+            <img src="../../MyProfile/assest/images/Java_logo.png">
+        </div>
+
+
+        <div class="javafx">
+            <img src="../../MyProfile/assest/images/MySQL_logo.png">
+
+        </div>
+
+
+        <div class="mysql" >
+            <img src="../../MyProfile/assest/images/HTML_logo.png" >
+
+        </div>
+
+        <div class="mysql" >
+            <img src="../../MyProfile/assest/images/CSS_logo.png" >
+
+        </div>
+
+
+        <div class="html" >
+            <img src="../../MyProfile/assest/images/AI_logo.png" >
+
+        </div>
+        <br>
+
+        <div class="css" >
+            <img src="../../MyProfile/assest/images/PS_logo.png">
+
+        </div>
+        <br>
+
+        <div class="mysql" >
+            <img src="../../MyProfile/assest/images/Blender_logo.png">
+
+            <br>
+        </div>
+
+        <div class="mysql" >
+            <img src="../../MyProfile/assest/images/Figma_logo.png">
+
+            <br>
+        </div>
+
+        <br>
+
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+<!--    --------------------------------------------PROJECTS----------------------------------------------------->
+
+    <section id="projects">
+        <h1 align="center">  PROJECTS<span>.</span></h1>
+        <div class="projects">
+            <a href="https://github.com/tharindu-dasun/Pharmacy" target="_blank">
+                <img src="../../MyProfile/assest/images/Hotel_Management.jpg"></a>
+            <a href="https://github.com/tharindu-dasun/Pharmacy" target="_blank">
+                <img src="../../MyProfile/assest/images/Pharmacy_Management.png"></a>
+            <a href="https://github.com/tharindu-dasun/POS-System" target="_blank">
+                <img src="../../MyProfile/assest/images/POS_System.jpg"></a>
+            <pre>      <b>Hotel Management System</b>                   <b> Pharmacy Management System  </b>                <b>   POS System </b>  </pre>
+            <br>
+            <br>
+<!--            <button align="center">View All</button>-->
+            <button align: center> view All</button>
+        </div>
+    </section>
+
+
+<!--    -------------------------------------------------ASSIGNMENT---------------------------------------------->
+
+    <section id="Assignment">
+        <h1 align="center">ASSIGNMENT<span>.</span></h1>
+        <div class="Assignment">
+
+            <a href="http://localhost:63342/MyProfile2/MyProfile/myprojects/css/Assignment%2001%20Positions/case_01.html?_ijt=jr8ck7aepaf5am0ibcmk2to3eu&_ij_reload=RELOAD_ON_SAVE" target="_blank">
+                <img src="../../MyProfile/assest/images/case_01 (3).JPG"></a>
+<!--            <pre> <b> Hotel Management System </b></pre>-->
+            <a href="http://localhost:63342/MyProfile2/MyProfile/myprojects/css/Assignment%2001%20Positions/case_05.html?_ijt=jr8ck7aepaf5am0ibcmk2to3eu&_ij_reload=RELOAD_ON_SAVE" target="_blank">
+                <img src="../../MyProfile/assest/images/Case 02 (2).JPG"></a>
+            <a href="http://localhost:63342/MyProfile2/MyProfile/myprojects/css/Assignment%2001%20Positions/case_02.html?_ijt=jr8ck7aepaf5am0ibcmk2to3eu&_ij_reload=RELOAD_ON_SAVE" target="_blank">
+                <img src="../../MyProfile/assest/images/Case 03 (2).JPG"></a>
+            <a href="http://localhost:63342/MyProfile2/MyProfile/myprojects/css/Assignment%2001%20Positions/case_04.html?_ijt=u9evrh1ipdm9v1peml6aos2dkp&_ij_reload=RELOAD_ON_SAVE" target="_blank">
+                <img src="../../MyProfile/assest/images/Case_04 (2).JPG"></a>
+            <pre>    <b>CSS Position Case 01</b>         <b>CSS Position Case 02  </b>         <b>CSS Position Case 03</b>          <b>CSS Position Case 04</b>  </pre>
+
+
+
+
+
+            <a href="http://localhost:63342/MyProfile2/MyProfile/myprojects/css/Assignment%2002%20Animation/case_07.html?_ijt=jr8ck7aepaf5am0ibcmk2to3eu&_ij_reload=RELOAD_ON_SAVE" target="_blank">
+                <img src="../../MyProfile/assest/images/CSS_Position_Case_01 (2).JPG"></a>
+
+            <a href="http://localhost:63342/MyProfile2/MyProfile/myprojects/css/Assignment%2002%20Animation/case_08.html?_ijt=jr8ck7aepaf5am0ibcmk2to3eu&_ij_reload=RELOAD_ON_SAVE" target="_blank">
+                <img src="../../MyProfile/assest/images/CSS_Position_Case_02 (2).JPG"></a>
+            <a href="http://localhost:63342/MyProfile2/MyProfile/myprojects/css/Assignment%2002%20Animation/case_09.html?_ijt=jr8ck7aepaf5am0ibcmk2to3eu&_ij_reload=RELOAD_ON_SAVE" target="_blank">
+                <img src="../../MyProfile/assest/images/CSS_Position_Case_03 (2).JPG"></a>
+            <a href="http://localhost:63342/MyProfile2/MyProfile/myprojects/css/Assignment%2002%20Animation/case_12.html?_ijt=jr8ck7aepaf5am0ibcmk2to3eu&_ij_reload=RELOAD_ON_SAVE" target="_blank">
+            <img src="../../MyProfile/assest/images/CSS_Position_Case_04 (2).JPG"></a>
+            <pre>    <b>CSS Animation Case 01</b>         <b>CSS Animation Case 02  </b>      <b>CSS Animation Case 03</b>         <b>CSS Animation Case 04</b>  </pre>
+            <a href="http://localhost:63342/MyProfile2/MyProfile/myprojects/JS/Knight_rider_light/index_knight.html?_ijt=cnqospf3j0rh6pfjttfdcibh4m&_ij_reload=RELOAD_ON_SAVE" target="_blank">
+            <img src="../../MyProfile/assest/images/JS Knight (2).JPG"></a>
+            <img src="../../MyProfile/assest/images/JS Game.png">
+            <pre>      <b>JS Knight Rider</b>                    <b>JS Game</b> </pre>
+            <br>
+            <br>
+<!--            <button align="center">View All</button>-->
+        </div>
+    </section>
+
+<!-------------------------------------------------CONTACT------------------------------------------------>
+
+    <section id="contact">
+
+        <h1 align="center">CONTACT<span>.</span></h1>
+
+        <div>
+            <h2>Address : No - 73, Dampe, Madapatha, Piliyandala.</h2>
+            <h2>Email :<a href="mailto:tharindu.dasunccp@gmail.com">tharindu.dasunccp@gmail.com </a></h2>
+            <h2>Contact No : +94712450047  <br> +94702772766</h2>
+        </div>
+
+
+        <div>
             <a href="https://www.linkedin.com/in/tharindu-dasun-medis/" target="_blank">
-                <img src="assest/images/linkedin-icon-png-16.jpg" width="50" alt="lap">
+                <img src="../../MyProfile/assest/images/Linkiden_logo.png" width="50" alt="lap">
             </a>
             <a href="https://twitter.com/tharindu_dasun_" target="_blank">
-                <img src="assest/images/twitter.png" width="50" alt="lap">
+                <img src="../../MyProfile/assest/images/Twitter_logo.png" width="50" alt="lap">
             </a>
             <a href="https://www.facebook.com/tharindu.dasun.359" target="_blank">
-                <img src="assest/images/facebook.png" width="50" alt="lap">
+                <img src="../../MyProfile/assest/images/FB_logo.png" width="50" alt="lap">
             </a>
             <a href="https://www.instagram.com/tharindu_dasun514/" target="_blank">
-                <img src="assest/images/instagrame.png" width="50" alt="lap">
+                <img src="../../MyProfile/assest/images/Insta_logo.png" width="50" alt="lap">
             </a>
             <a href="https://github.com/tharindu-dasun" target="_blank">
-                <img src="assest/images/github.jpg" width="50" alt="lap">
+                <img src="../../MyProfile/assest/images/Github_logo.png" width="50" alt="lap">
             </a>
-        </th>
+        </div>
 
+        <!--        <div align="center">-->
+        <!--            <form class="contact" action="" method="post">-->
+
+        <!--                <input  id="txtName" type="text" class="text-box" placeholder="Your Name*"><br><br>-->
+
+        <!--                <input  id="txtEmail" type="text" class="text-box" placeholder="E-mail Address*"><br><br>-->
+
+        <!--                <textarea  id="txtAdd" placeholder="Message*"></textarea>-->
+        <!--                <br>-->
+        <!--                <br>-->
+        <!--                <button>Submit</button>-->
+
+        <!--            </form>-->
+        <!--        </div>-->
+    </section>
+
+
+    <footer>
         <br>
         <br>
-        <table>
-            <thead>
-            <th width="60%"></th>
-            <th><input type="button" value="Hire me"></th>
-            </thead>
-        </table>
-    </table>
 
-    <hr>
+        <div id="navbar00">
 
-    <table>
-        <tr>
-            <h1>Service .</h1>
-        </tr>
 
-        <table>
-            <tr>
-                <th><img src="assest/images/Software Development.png" width="200" alt="lap"></th>
-                <th><img src="assest/images/ui ux.png" width="200" alt="lap"></th>
-                <th><img src="assest/images/web development.png" width="200" alt="lap"></th>
-            </tr>
-            <tr>
-                <td><h3>Software Devlepment</h3></td>
-                <td><h3>UI/UX Design</h3></td>
-                <td><h3>Web Development</h3></td>
-            </tr>
-            <tr>
-                <td>All Standalone software development with java, javaFx,MySQL and Hibernate <p>&emsp;</p> </td>
-                <td>Mobile apps, Web sites design </td>
-                <td>Blogs,E-Commerce websites development with JavaScript , CSS and HTML <p>&emsp;</p></td>
-            </tr>
-        </table>
-    </table>
+            <a  id="sa"><span><b>TD</b></span>.</a>
+            <div id="navbar-right1">
 
-    <hr>
+                <a><b>©2022. All Right Reserve</b></a>
+            </div>
+        </div>
 
-    <table>
-        <tr>
-            <h1>Education .</h1>
-        </tr>
 
-        <table>
-            <tr>
-                <td><img src="assest/images/ijse logo.png" width="100" alt="lap"></td>
-                <td>2022 - 2024 GDSE Program
-                    IJSE - Institute of Software Engineering </td>
-            </tr>
-            <tr>
-                <td><img src="assest/images/uoc.jpg" width="100" alt="lap"></td>
-                <td>2020 - 2021 Certificate in Business English
-                    University of Colombo</td>
-            </tr>
-            <tr>
-                <td><img src="assest/images/PCC.png" width="100" alt="lap"></td>
-                <td>2019 A/L Exam Physical Science Stream
-                    Central College Piliyandala </td>
-            </tr>
-            <tr>
-                <td><img src="assest/images/PCC.png" width="100" alt="lap"></td>
-                <td>2016 O/L Exam
-                    Central College Piliyandala </td>
-            </tr>
-            <tr>
-                <td><img src="assest/images/scv scl.png" width="100" alt="lap"></td>
-                <td>2006 - 2010  Primary Studies
-                    Somaveera Chandrasiri Vidyalaya - Piliyandala</td>
-            </tr>
-        </table>
-    </table>
 
-    <hr>
 
-    <table>
-        <tr>
-            <h1>Skills .</h1>
-        </tr>
+    </footer>
 
-        <table>
-            <tr>
-                <th><img src="assest/images/java logo.jpg" width="200" alt="lap"></th>
-                <th><img src="assest/images/mysql logo.png" width="150" alt="lap"></th>
-                <th><img src="assest/images/html.png" width="200" alt="lap"></th>
-                <th><img src="assest/images/css.png" width="200" alt="lap"></th>
-            </tr>
-            <tr>
-                <th><img src="assest/images/Illustrator-Logo.png" width="200" alt="lap"></th>
-                <th><img src="assest/images/Adobe-Photoshop-Logo.png" width="200" alt="lap"></th>
-                <th><img src="assest/images/blender.png" width="150" alt="lap"></th>
-                <th><img src="assest/images/figma logo.png" width="100" alt="lap"></th>
-            </tr>
-        </table>
-
-        <hr>
-
-        <table>
-            <tr>
-                <h1>Projects .</h1>
-            </tr>
-
-            <tr>
-                <th>
-                    <a href="https://github.com/tharindu-dasun" target="_blank">
-                        <img src="https://i.pinimg.com/736x/76/18/17/761817e8f661671940bee45ef9b99eb9.jpg" width="200" alt="lap">
-                </th>
-                <th>
-                    <a href="https://github.com/tharindu-dasun" target="_blank">
-                        <img src="https://img.freepik.com/free-vector/pharmacy-concept-illustration_1284-11599.jpg?w=2000" width="150" alt="lap">
-                </th>
-                <th>
-                    <a href="https://github.com/tharindu-dasun" target="_blank">
-                        <img src="https://static.vecteezy.com/system/resources/thumbnails/001/981/284/small_2x/people-shopping-in-supermarket-with-face-mask-free-vector.jpg" width="200" alt="lap">
-                </th>
-            </tr>
-
-            <tr>
-                <th>Hotel Mangment <p>&emsp;</p></th>
-                <th>Pharmacy Mangment </th>
-                <th>Super Market Mangment <p>&emsp;</p></th>
-            </tr>
-        </table>
-
-        <hr>
-
-        <table>
-            <tr>
-                <h1>Contact Info .</h1>
-            </tr>
-
-            <table>
-                <tr>
-                    <td>
-                        <h4>Address : No - 73, Dampe, Madapatha, Piliyandala.</h4>
-                        <h4>Email :  <a href="mailto:tharindu.dasunccp@gmail.com">tharindu.dasunccp@gmail.com </a></h4>
-                        <h4>Contact No : +94712450047 +94702772766</h4>
-                    </td>
-                    <td><th><textarea id="name"
-                                      name="Name"
-                                      placeholder="Name*"
-                                      cols="70"
-                                      rows="3"></textarea> <br></th></td></tr>
-                <tr>
-                    <td></td>
-                    <td><th><textarea id="email"
-                                      name="Email"
-                                      placeholder="Email*"
-                                      cols="70"
-                                      rows="3"></textarea> <br></th></td></tr>
-                <tr>
-                    <td>
-                        <h3>Follow me : </h3>
-
-                        <a href="https://www.linkedin.com/in/tharindu-dasun-medis/" target="_blank">
-                            <img src="assest/images/linkedin-icon-png-16.jpg" width="50" alt="lap">
-                        </a>
-                        <a href="https://twitter.com/tharindu_dasun_" target="_blank">
-                            <img src="assest/images/twitter.png" width="50" alt="lap">
-                        </a>
-                        <a href="https://www.facebook.com/tharindu.dasun.359" target="_blank">
-                            <img src="assest/images/facebook.png" width="50" alt="lap">
-                        </a>
-                        <a href="https://www.instagram.com/tharindu_dasun514/" target="_blank">
-                            <img src="assest/images/instagrame.png" width="50" alt="lap">
-                        </a>
-                        <a href="https://github.com/tharindu-dasun" target="_blank">
-                            <img src="assest/images/github.jpg" width="50" alt="lap">
-                        </a>
-                    </td>
-                    <td>
-                    <th>
-                        <textarea id="message*"
-                                  name="Message*"
-                                  placeholder="Message*"
-                                  cols="70"
-                                  rows="10"></textarea>
-                    </th>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td></td>
-                    <td><th><input type="button" value="Submit"></th></td></tr>
-
-            </table>
-
-        </table>
-
-</body>
+</main>
 </html>
