@@ -13,6 +13,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../MyProfile/assest/libs/index_css/main_css.css">
     <link rel="stylesheet" href="../MyProfile/assest/Animations/hover.css" media="all">
+
+<!--    <link rel="stylesheet" href="../MyProfile/assest/libs/bg_animation.html" media="all">-->
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -23,15 +26,27 @@
 
 
 <main>
-    <header>
+    <header class="header_main">
+
         <ul>
             <li>About</li>
             <li>Service</li>
             <li>Education</li>
             <li>Skills</li>
             <li>Projects</li>
-            <li>Contact Us</li>
+            <li href="#Assignment">Contact Us</li>
+
         </ul>
+
+<!--        <div>-->
+<!--            <a class="active" href="#home"><b>Home</b></a>-->
+<!--            <a href="#about-me"><b>About</b></a>-->
+<!--            <a href="#services"><b>Services</b></a>-->
+<!--            <a href="#skills"><b>Skills</b></a>-->
+<!--            <a href="#projects"><b>Projects</b></a>-->
+<!--            <a href="#education"><b>Education</b></a>-->
+<!--            <a href="#contact"><b>Contact</b></a>-->
+<!--        </div>-->
     </header>
 
     <br>
@@ -42,19 +57,59 @@
     <div id="home-set">
 
         <section class="Home-Text-Container">
+
             <br>
             <img alt="logo"  src="../../MyProfile/assest/images/My_logo.png">
-            <h2 class="hello">Hello! <br> I’m <span> <b>Tharindu Dasun . </b></span> </h2>
 
-            <h3>Professional Full Stack Developer</h3>
+            <h2 class="container_one">Hello! <br> I’m <span> <b>Tharindu Dasun . </b></span> </h2>
 
-            <h4>I’m Developer and Designer. I'm very passionate and <br>
+            <h3 class="container">Professional Full Stack Developer</h3>
+
+            <h4 class="container_one">I’m Developer and Designer. I'm very passionate and <br>
                 dedicated to my work. I have acquired the skills and <br>
                 knowledge necessary to make your project a success. <br>
                 Let's collaborate! <br>
                 I'm open for collaborations. I can made for you great <br>
                 softwares,web designs, portfolios and much others at <br> good price.
             </h4>
+
+
+
+<!--                    <h4 class="neon">I’m Developer and Designer. I'm very passionate and <br>-->
+<!--                        dedicated to my work. I have acquired the skills and <br>-->
+<!--                        knowledge necessary to make your project a success. <br>-->
+<!--                        Let's collaborate! <br>-->
+<!--                        I'm open for collaborations. I can made for you great <br>-->
+<!--                        softwares,web designs, portfolios and much others at <br> good price.-->
+<!--                    </h4>-->
+
+
+
+
+<!--            <h4>-->
+<!--                <span>I’m Developer</span>-->
+<!--                <span>and</span>-->
+<!--                <span>Designer.</span>-->
+<!--                <span>I'm very passionate</span>-->
+<!--                <span>and</span>-->
+<!--                <span>dedicated to my work.</span>-->
+<!--                <span>I have acquired</span>-->
+<!--                <span>the</span>-->
+<!--                <span>skills</span>-->
+<!--                <span>and</span>-->
+<!--                <span>knowledge necessary</span>-->
+<!--                <span>to</span>-->
+<!--                <span>make your project a success.</span>-->
+<!--                <span>Let's collaborate!</span>-->
+<!--                <span>I'm open for collaborations.</span>-->
+<!--                <span>I can made</span>-->
+<!--                <span>for you </span>-->
+<!--                <span>great softwares,</span>-->
+<!--                <span>web designs,</span>-->
+<!--                <span> portfolios</span>-->
+<!--                <span>and much others</span>-->
+<!--                <span>at good price.</span>-->
+<!--            </h4>-->
 
             <button>Hire Me</button>
 
@@ -63,7 +118,7 @@
 
 
 
-            <h4 id="social">
+            <h4 id="social" class="container_one">
                 <a href="https://www.linkedin.com/in/tharindu-dasun-medis/" target="_blank">
                     <img src="../../MyProfile/assest/images/Linkiden_logo.png" width="70" alt="lap"></a>
 
@@ -87,11 +142,12 @@
 
     <section id="services">
         <h1 align="center">SERVICES<span>.</span></h1>
-
+        <div class="container">
         <div id="ser-img">
             <img src="../../MyProfile/assest/images/Group 1.png">
             <img src="../../MyProfile/assest/images/Group 2.png">
             <img src="../../MyProfile/assest/images/Group 3.png">
+        </div>
         </div>
 
     </section>
@@ -101,7 +157,7 @@
     <section id="education">
 <!--        <h1 align="center">EDUCATION<span>.</span></h1>-->
         <h1 align="center">EDUCATION<span>.</span></h1>
-
+        <div class="container">
         <div class="edu-line">
 
             <ul>
@@ -118,12 +174,14 @@
                 </li>
             </ul>
         </div>
+        </div>
     </section>
 
 
     <!--    --------------------------------------------SKILLS----------------------------------------------->
 
     <section id="skills">
+
         <h1 align="center">SKILLS<span>.</span></h1>
 
         <div  class="java">
@@ -181,7 +239,7 @@
 
 <!--    --------------------------------------------PROJECTS----------------------------------------------------->
 
-    <section id="projects">
+    <section id="projects" >
         <h1 align="center">  PROJECTS<span>.</span></h1>
         <div class="projects">
             <a href="https://github.com/tharindu-dasun/Pharmacy" target="_blank">
@@ -203,6 +261,7 @@
 
     <section id="Assignment">
         <h1 align="center">ASSIGNMENT<span>.</span></h1>
+
         <div class="Assignment">
 
             <a href="http://localhost:63342/MyProfile2/MyProfile/myprojects/css/Assignment%2001%20Positions/case_01.html?_ijt=jr8ck7aepaf5am0ibcmk2to3eu&_ij_reload=RELOAD_ON_SAVE" target="_blank">

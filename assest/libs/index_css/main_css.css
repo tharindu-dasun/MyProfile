@@ -56,6 +56,42 @@ input[type=submit]:hover {
     background-color: rgba(255, 255, 255, 0.24);
     padding: 20px;
 }
+
+/*------------------------------------Abouth Haalla---------------------------------------------*/
+
+.container_one{
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, 0.24);
+    padding: 10px;
+    width: content-box;
+}
+
+.neon {
+    /*margin: 1rem auto;*/
+    animation: neon 1s ease infinite;
+}
+@keyframes neon {
+    0%,
+    100% {
+        text-shadow: 0 0 10px #096ff5, 0 0 20px #096ff5, 0 0 20px #096ff5, 0 0 20px #096ff5, 0 0 2px #fed128, 2px 2px 2px #806914;
+        color: #f5efcb;
+    }
+    50% {
+        text-shadow: 0 0 2px #0749ad, 0 0 5px #0749ad, 0 0 5px #0749ad, 0 0 5px #0749ad, 0 0 2px #800e0b, 4px 4px 2px #40340a;
+        color: #ffffff;
+    }
+}
+
+
+/*---------------------------------------------------------Header-----------------------------------*/
+
+.header_main{
+    border: 1px solid #000049;
+    border-radius: 0px;
+    background-color: #06067c;
+    padding: 2px;
+    box-shadow: 0px 3px 5px 0px black;
+}
 /*---------------------------------------Main Body------------------------------------------------*/
 
 body {
@@ -183,7 +219,8 @@ header>ul>li:hover{
     /*width: 440px;*/
     width: 400px;
     text-decoration: none;
-    padding-left: 32px;
+    border-radius: unset;
+    padding-left: 20px;
     height: auto;
 }
 
