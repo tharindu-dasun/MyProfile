@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Knight Rider Theme</title>
+
+</head>
+<style>
+    body{
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        background: black;
+    }
+    .grid{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: fit-content;
+        height: fit-content;
+    }
+    .square{
+        width: 100px;
+        height: 50px;
+        border: 1px solid black;
+        display: inline-block;
+    }
+    #btnPanel{
+        position: absolute;
+        top: 170px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: fit-content;
+        height: fit-content;
+    }
+
+</style>
+<body>
+<section class="grid">
+    <div class="square" id="c1"></div>
+    <div class="square" id="c2"></div>
+    <div class="square" id="c3"></div>
+    <div class="square" id="c4"></div>
+    <div class="square" id="c5"></div>
+    <div class="square" id="c6"></div>
+    <div class="square" id="c7"></div>
+</section>
+
+<section id="btnPanel">
+    <button id="btnStart">Start</button>
+    <button id="btnStop">Stop</button>
+</section>
+
+<audio id="audioooo" src="assests/audio/Knight Rider Sms ! Knight Rider ! Theme.mp3"></audio>
+<script src="MyProfile2/MyProfile/assest/jQury/jquery-3.6.4.min.js"></script>
+<script>
+
+    var light = $(".square");
+    var lightNumber = 0;
+    var derection = 'RIGHT';
+    var intervalId = null;
+
+    function timers() {
+        $(".square").css('background','white');
+        light[lightNumber].style.background = 'red';
+        if (lightNumber > 0 ){
+            light[lightNumber-1].style.background = 'pink';
+        }
+        if (lightNumber < 6){
+            light[lightNumber+1].style.background = 'pink';
+        }
+
+        if (lightNumber===0){
+            derection='RIGHT';
+        }
+        if (lightNumber===6){
+            derection='LEFT';
+        }
+        if (derection ==='RIGHT'){
+            lightNumber++;
+        }else{
+            lightNumber--;
+        }
+
+    }
+    //setInterval(timers,100);
+
+    $("#btnStart").on("click",() =>{
+        clearInterval(intervalId);
+        intervalId =setInterval(timers,100);
+        $('#audioooo')[0].play();
+    });
+
+    $("#btnStop").on("click",() =>{
+        clearInterval(intervalId);
+        $('#audioooo')[0].pause();
+    });
+
+
+</script>
+</body>
+</html>
